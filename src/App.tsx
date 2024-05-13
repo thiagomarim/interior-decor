@@ -1,9 +1,13 @@
 import Header from "./components/header";
+import Hero from "./components/hero";
 
 export default function App() {
   return (
-    <main>
+    <div>
       <Header />
-    </main>
+      <main className="max-w-full bg-white">
+        <Hero />
+      </main>
+    </div>
   );
 }

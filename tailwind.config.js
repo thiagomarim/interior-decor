@@ -9,7 +9,10 @@ export default {
       fontFamily: {
         body: ['Jost', 'sans-serif'],
         title: ['DM Serif Display', 'sans-serif'],
-      }
+      },
+      backgroundImage: {
+        'hero-image': "url('./assets/hero/bg.jpg')",
+      },
     },
   },
   plugins: [],
