@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div>
       <Header />
-      <main className="max-w-full bg-white">
+      <main className="max-w-full flex flex-col gap-16">
         <Hero />
       </main>
     </div>
