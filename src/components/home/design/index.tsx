@@ -1,6 +1,6 @@
 import { BsTelephoneFill } from "react-icons/bs";
-import room from "../../assets/room.jpg";
-import Button from "../button";
+import room from "../../../assets/room.jpg";
+import Button from "../../button";
 
 export default function DesignSection() {
   return (

@@ -1,7 +1,7 @@
-import DesignSection from "./components/design";
+import DesignSection from "./components/home/design";
 import Header from "./components/header";
-import Hero from "./components/hero";
-import Services from "./components/services";
+import Services from "./components/home/services";
+import Hero from "./components/home/hero";
 
 export default function App() {
   return (

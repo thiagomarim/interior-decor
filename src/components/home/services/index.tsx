@@ -1,6 +1,6 @@
-import lighting from "../../assets/services/lighting-icon.png";
-import interior from "../../assets/services/interior-icon.png";
-import outdoor from "../../assets/services/outdoor-icon.png";
+import lighting from "../../../assets/services/lighting-icon.png";
+import interior from "../../../assets/services/interior-icon.png";
+import outdoor from "../../../assets/services/outdoor-icon.png";
 
 const servicesItems = [
   {
