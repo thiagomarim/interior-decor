@@ -3,6 +3,7 @@ import Header from "./components/header";
 import Services from "./components/home/services";
 import Hero from "./components/home/hero";
 import Testimony from "./components/home/testimony";
+import Brands from "./components/home/brands";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Hero />
         <Services />
         <DesignSection />
+        <Brands />
         <Testimony />
       </main>
     </div>
