@@ -1,8 +1,8 @@
-import modern from "../../assets/brands/01.svg";
-import style from "../../assets/brands/02.svg";
-import brand from "../../assets/brands/03.svg";
-import nature from "../../assets/brands/04.svg";
-import classic from "../../assets/brands/05.svg";
+import modern from "../../../assets/brands/01.svg";
+import style from "../../../assets/brands/02.svg";
+import brand from "../../../assets/brands/03.svg";
+import nature from "../../../assets/brands/04.svg";
+import classic from "../../../assets/brands/05.svg";
 
 export default function Brands() {
   return (
