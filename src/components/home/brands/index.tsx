@@ -6,7 +6,7 @@ import classic from "../../../assets/brands/05.svg";
 
 export default function Brands() {
   return (
-    <section className="container grid items-center grid-cols-1 justify-items-center md:justify-items-start sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 flex-wrap gap-8">
+    <section className="container grid items-center grid-cols-1 justify-items-center lg:justify-items-start sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 flex-wrap gap-16 lg:gap-32">
       <img src={modern} alt="Logo da empresa Mordern Home" />
       <img src={style} alt="Logo da empresa Style Vintage" />
       <img src={brand} alt="Logo da empresa Brand" />
