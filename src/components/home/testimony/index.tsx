@@ -24,10 +24,10 @@ const DATA_TESTIMONY = [
 export default function Testimony() {
   return (
     <section className="container">
-      <h1 className="text-5xl font-title text-center">
+      <h1 className="text-4xl sm:text-5xl font-title text-center">
         What Our Customers Say About Us
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center xl:grid-cols-3 gap-8 xl:gap-16 mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center xl:grid-cols-3 gap-8 xl:gap-16 mt-8 sm:mt-16">
         {DATA_TESTIMONY.map((testimony, i) => (
           <div
             key={i}
