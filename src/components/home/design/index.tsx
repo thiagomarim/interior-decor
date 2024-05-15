@@ -10,7 +10,7 @@ export default function DesignSection() {
           <img src={room} alt="Design de um quarto" />
         </div>
         <div className="max-w-[704px] flex flex-col items-center sm:items-start gap-12">
-          <h1 className="text-5xl font-title">
+          <h1 className="text-4xl sm:text-5xl font-title">
             Designing Your Dream With Brilliance
           </h1>
           <p className="text-secondary text-xl">
