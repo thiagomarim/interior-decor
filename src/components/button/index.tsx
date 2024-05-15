@@ -13,7 +13,9 @@ export default function Button({ children, className }: ButtonProps) {
         className
       )}
     >
-      <span className="text-white text-base">{children}</span>
+      <span className="text-white text-base flex items-center gap-2">
+        {children}
+      </span>
     </button>
   );
 }

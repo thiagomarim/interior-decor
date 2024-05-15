@@ -5,6 +5,7 @@ import Hero from "./components/home/hero";
 import Testimony from "./components/home/testimony";
 import Brands from "./components/home/brands";
 import Steps from "./components/home/steps";
+import Contact from "./components/home/contact";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Brands />
         <Steps />
         <Testimony />
+        <Contact />
       </main>
     </div>
   );

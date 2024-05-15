@@ -7,11 +7,7 @@ export default function DesignSection() {
     <section className="container">
       <div className="grid grid-cols-1 justify-items-center lg:justify-items-start lg:grid-cols-2 gap-28">
         <div>
-          <img
-            src={room}
-            alt="Design de um quarto"
-            className="max-w-[630px] max-h-[630px]"
-          />
+          <img src={room} alt="Design de um quarto" />
         </div>
         <div className="max-w-[704px] flex flex-col gap-12">
           <h1 className="text-5xl font-title">
