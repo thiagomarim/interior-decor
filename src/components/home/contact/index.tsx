@@ -1,4 +1,3 @@
-import { HiArrowNarrowRight } from "react-icons/hi";
 import Button from "../../button";
 
 export default function Contact() {
@@ -9,9 +8,7 @@ export default function Contact() {
         Be the first to discover trends, inspirations, and special offers as we
         bring the world of design.
       </p>
-      <Button>
-        Connect with us <HiArrowNarrowRight />
-      </Button>
+      <Button>Connect with us</Button>
     </section>
   );
 }
