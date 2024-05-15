@@ -5,11 +5,11 @@ import Button from "../../button";
 export default function DesignSection() {
   return (
     <section className="container">
-      <div className="grid grid-cols-1 justify-items-center lg:justify-items-start lg:grid-cols-2 gap-28">
+      <div className="grid grid-cols-1 justify-items-center sm:justify-items-start text-center sm:text-start lg:grid-cols-2 gap-14 sm:gap-28">
         <div>
           <img src={room} alt="Design de um quarto" />
         </div>
-        <div className="max-w-[704px] flex flex-col gap-12">
+        <div className="max-w-[704px] flex flex-col items-center sm:items-start gap-12">
           <h1 className="text-5xl font-title">
             Designing Your Dream With Brilliance
           </h1>
