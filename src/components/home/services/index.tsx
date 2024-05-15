@@ -23,11 +23,20 @@ const servicesItems = [
 export default function Services() {
   return (
     <section className="container">
-      <h1 className="text-5xl font-title">Our Services</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-12">
+      <h1 className="text-5xl font-title text-center sm:text-start">
+        Our Services
+      </h1>
+      <div className="grid grid-cols-1 justify-items-center sm:justify-items-start sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-12">
         {servicesItems.map((item, i) => (
-          <div key={i} className="flex items-start gap-8 mt-12">
-            <img src={item.icon} alt="Lighting Icon" />
+          <div
+            key={i}
+            className="flex flex-wrap sm:flex-nowrap justify-center sm:justify-start text-center sm:text-start gap-8 mt-12"
+          >
+            <img
+              src={item.icon}
+              alt="Lighting Icon"
+              className="w-[72px] h-[70px]"
+            />
             <div className="flex flex-col gap-8">
               <h3 className="text-3xl font-semibold">{item.name}</h3>
               <p className="text-secondary text-xl">{item.desc}</p>
