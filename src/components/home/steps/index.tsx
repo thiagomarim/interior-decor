@@ -27,7 +27,7 @@ export default function Steps() {
     <section className="container">
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-16 sm:gap-32">
         <div>
-          <h1 className="text-5xl font-title mb-16">
+          <h1 className="text-4xl sm:text-5xl font-title mb-16 text-center sm:text-start">
             Designing Your Dream in Three Simple Steps
           </h1>
           {DATA_STEPS.map((step) => (
@@ -36,7 +36,7 @@ export default function Steps() {
               key={step.name}
             >
               <div className="flex flex-col items-center">
-                <span className="bg-primary size-[72px] rounded-full flex items-center justify-center">
+                <span className="bg-primary size-14 sm:size-[72px] rounded-full flex items-center justify-center">
                   {step.icon}
                 </span>
                 {step.last ? (
@@ -46,7 +46,9 @@ export default function Steps() {
                 )}
               </div>
               <div className="flex flex-col gap-2">
-                <span className="text-3xl font-semibold">{step.name}</span>
+                <span className=" text-2xl sm:text-3xl font-semibold">
+                  {step.name}
+                </span>
                 <span className="text-secondary text-xl">{step.desc}</span>
               </div>
             </div>
