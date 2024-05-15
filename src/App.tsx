@@ -6,12 +6,13 @@ import Testimony from "./components/home/testimony";
 import Brands from "./components/home/brands";
 import Steps from "./components/home/steps";
 import Contact from "./components/home/contact";
+import Footer from "./components/footer";
 
 export default function App() {
   return (
     <div>
       <Header />
-      <main className="max-w-full flex flex-col gap-32 sm:gap-40 mb-96">
+      <main className="max-w-full flex flex-col gap-32 sm:gap-40">
         <Hero />
         <Services />
         <DesignSection />
@@ -19,6 +20,7 @@ export default function App() {
         <Steps />
         <Testimony />
         <Contact />
+        <Footer />
       </main>
     </div>
   );
