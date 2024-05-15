@@ -23,14 +23,14 @@ const servicesItems = [
 export default function Services() {
   return (
     <section className="container">
-      <h1 className="text-5xl font-title text-center sm:text-start">
+      <h1 className="text-4xl sm:text-5xl font-title text-center sm:text-start">
         Our Services
       </h1>
       <div className="grid grid-cols-1 justify-items-center sm:justify-items-start sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-12">
         {servicesItems.map((item, i) => (
           <div
             key={i}
-            className="flex flex-wrap sm:flex-nowrap justify-center sm:justify-start text-center sm:text-start gap-8 mt-12"
+            className="flex flex-wrap sm:flex-nowrap justify-center sm:justify-start text-center sm:text-start gap-4 sm:gap-8 mt-12"
           >
             <img
               src={item.icon}
