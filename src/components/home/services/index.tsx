@@ -35,7 +35,8 @@ export default function Services() {
             initial={{ opacity: 0, y: 150 }}
             whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 150 }}
-            transition={{ duration: 0.8, delay: i * 0.2 }}
+            transition={{ duration: 1.2, delay: i * 0.3 }}
+            viewport={{ once: true }}
           >
             <img
               src={item.icon}

@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="">
       <Header />
-      <main className="max-w-full flex flex-col gap-32 sm:gap-40">
+      <main className="max-w-full flex flex-col gap-48 sm:gap-40">
         <Hero />
         <Services />
         <DesignSection />

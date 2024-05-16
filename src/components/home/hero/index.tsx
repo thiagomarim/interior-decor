@@ -13,7 +13,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: -150 }}
           whileInView={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -150 }}
-          transition={{ duration: 1.2 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: true }}
         >
           <h1 className="font-title text-5xl lg:text-7xl">Interior Design</h1>
           <p className="text-lg lg:text-xl text-secondary">

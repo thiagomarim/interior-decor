@@ -1,15 +1,29 @@
 import { BsTelephoneFill } from "react-icons/bs";
 import room from "../../../assets/room.jpg";
 import Button from "../../button";
+import { motion } from "framer-motion";
 
 export default function DesignSection() {
   return (
     <section className="container" id="designing">
       <div className="grid grid-cols-1 justify-items-center sm:justify-items-start text-center sm:text-start lg:grid-cols-2 gap-14 sm:gap-28">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: -150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -150 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          viewport={{ once: true }}
+        >
           <img src={room} alt="Design de um quarto" />
-        </div>
-        <div className="max-w-[704px] flex flex-col items-center sm:items-start gap-12">
+        </motion.div>
+        <motion.div
+          className="max-w-[704px] flex flex-col items-center sm:items-start gap-12"
+          initial={{ opacity: 0, x: 150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 150 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <h1 className="text-4xl sm:text-5xl font-title">
             Designing Your Dream With Brilliance
           </h1>
@@ -33,7 +47,7 @@ export default function DesignSection() {
             </div>
           </div>
           <Button>See more designs</Button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
