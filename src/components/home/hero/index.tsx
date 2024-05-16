@@ -1,4 +1,5 @@
 import Button from "../../button";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -7,7 +8,13 @@ export default function Hero() {
       id="home"
     >
       <div className="container flex items-center justify-center text-center 2xl:text-start 2xl:justify-start h-full">
-        <div className="flex flex-col gap-5 max-w-[640px] items-center 2xl:items-start">
+        <motion.div
+          className="flex flex-col gap-5 max-w-[640px] items-center 2xl:items-start"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -100 }}
+          transition={{ duration: 0.5 }}
+        >
           <h1 className="font-title text-5xl lg:text-7xl">Interior Design</h1>
           <p className="text-lg lg:text-xl text-secondary">
             Step into a world where the art of Interior Design is meticulously
@@ -16,7 +23,7 @@ export default function Hero() {
             epitome of luxury and sophistication
           </p>
           <Button className="mt-2">Start Project</Button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
