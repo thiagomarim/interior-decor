@@ -1,4 +1,5 @@
 import sophie from "../../../assets/testamonials/sophie.png";
+import { motion } from "framer-motion";
 
 const DATA_TESTIMONY = [
   {
@@ -29,9 +30,14 @@ export default function Testimony() {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center xl:grid-cols-3 gap-8 xl:gap-16 mt-8 sm:mt-16">
         {DATA_TESTIMONY.map((testimony, i) => (
-          <div
+          <motion.div
             key={i}
             className="bg-primary max-w-[420px] h-[320px] rounded-lg"
+            initial={{ opacity: 0, y: 150 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 150 }}
+            transition={{ duration: 1.2, delay: i * 0.3 }}
+            viewport={{ once: true }}
           >
             <div className="flex flex-col justify-center items-center w-full h-full p-8 gap-8">
               <div className="flex items-center justify-center gap-4">
@@ -52,7 +58,7 @@ export default function Testimony() {
                 "{testimony.test}"
               </blockquote>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
