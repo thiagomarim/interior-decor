@@ -23,7 +23,7 @@ const DATA_TESTIMONY = [
 
 export default function Testimony() {
   return (
-    <section className="container">
+    <section className="container" id="about">
       <h1 className="text-4xl sm:text-5xl font-title text-center">
         What Our Customers Say About Us
       </h1>

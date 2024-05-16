@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
       <div className="container flex items-center justify-between h-full">
-        <a href="/" className="font-title text-2xl flex items-center gap-2">
+        <a href="#home" className="font-title text-2xl flex items-center gap-2">
           <PiHouseLineFill size={24} color="#fdba74" />
           InteriorDecor
         </a>

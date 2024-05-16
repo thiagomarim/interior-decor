@@ -45,16 +45,16 @@ export default function Footer() {
               <a href="#home">Home</a>
             </li>
             <li className="text-secondary hover:text-secondary/80 text-lg">
-              <a href="#home">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li className="text-secondary hover:text-secondary/80 text-lg">
-              <a href="#home">Designing</a>
+              <a href="#designing">Designing</a>
             </li>
             <li className="text-secondary hover:text-secondary/80 text-lg">
-              <a href="#home">About</a>
+              <a href="#about">About</a>
             </li>
             <li className="text-secondary hover:text-secondary/80 text-lg">
-              <a href="#home">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>

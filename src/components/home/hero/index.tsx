@@ -2,7 +2,10 @@ import Button from "../../button";
 
 export default function Hero() {
   return (
-    <section className="bg-hero-image bg-center bg-cover lg:bg-cover bg-no-repeat w-full h-[640px] xl:h-[840px]">
+    <section
+      className="bg-hero-image bg-center bg-cover lg:bg-cover bg-no-repeat w-full h-[640px] xl:h-[840px]"
+      id="home"
+    >
       <div className="container flex items-center justify-center text-center 2xl:text-start 2xl:justify-start h-full">
         <div className="flex flex-col gap-5 max-w-[640px] items-center 2xl:items-start">
           <h1 className="font-title text-5xl lg:text-7xl">Interior Design</h1>

@@ -22,7 +22,7 @@ const servicesItems = [
 
 export default function Services() {
   return (
-    <section className="container">
+    <section className="container" id="services">
       <h1 className="text-4xl sm:text-5xl font-title text-center sm:text-start">
         Our Services
       </h1>

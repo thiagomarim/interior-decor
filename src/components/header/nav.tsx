@@ -2,23 +2,23 @@ import { twMerge } from "tailwind-merge";
 
 const NAV_LINKS = [
   {
-    href: "/",
+    href: "#home",
     name: "Home",
   },
   {
-    href: "/",
+    href: "#services",
     name: "Services",
   },
   {
-    href: "/",
+    href: "#designing",
     name: "Designing",
   },
   {
-    href: "/",
+    href: "#about",
     name: "About",
   },
   {
-    href: "/",
+    href: "#contact",
     name: "Contact",
   },
 ];

@@ -10,7 +10,7 @@ import Footer from "./components/footer";
 
 export default function App() {
   return (
-    <div>
+    <div className="">
       <Header />
       <main className="max-w-full flex flex-col gap-32 sm:gap-40">
         <Hero />

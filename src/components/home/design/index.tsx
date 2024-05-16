@@ -4,7 +4,7 @@ import Button from "../../button";
 
 export default function DesignSection() {
   return (
-    <section className="container">
+    <section className="container" id="designing">
       <div className="grid grid-cols-1 justify-items-center sm:justify-items-start text-center sm:text-start lg:grid-cols-2 gap-14 sm:gap-28">
         <div>
           <img src={room} alt="Design de um quarto" />
