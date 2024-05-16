@@ -10,10 +10,10 @@ export default function Hero() {
       <div className="container flex items-center justify-center text-center 2xl:text-start 2xl:justify-start h-full">
         <motion.div
           className="flex flex-col gap-5 max-w-[640px] items-center 2xl:items-start"
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, y: -150 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -150 }}
+          transition={{ duration: 1.2 }}
         >
           <h1 className="font-title text-5xl lg:text-7xl">Interior Design</h1>
           <p className="text-lg lg:text-xl text-secondary">

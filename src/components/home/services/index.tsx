@@ -1,6 +1,7 @@
 import lighting from "../../../assets/services/lighting-icon.png";
 import interior from "../../../assets/services/interior-icon.png";
 import outdoor from "../../../assets/services/outdoor-icon.png";
+import { motion } from "framer-motion";
 
 const servicesItems = [
   {
@@ -28,9 +29,13 @@ export default function Services() {
       </h1>
       <div className="grid grid-cols-1 justify-items-center sm:justify-items-start sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-12">
         {servicesItems.map((item, i) => (
-          <div
+          <motion.div
             key={i}
             className="flex flex-wrap sm:flex-nowrap justify-center sm:justify-start text-center sm:text-start gap-4 sm:gap-8 mt-12"
+            initial={{ opacity: 0, y: 150 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 150 }}
+            transition={{ duration: 0.8, delay: i * 0.2 }}
           >
             <img
               src={item.icon}
@@ -41,7 +46,7 @@ export default function Services() {
               <h3 className="text-3xl font-semibold">{item.name}</h3>
               <p className="text-secondary text-xl">{item.desc}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
