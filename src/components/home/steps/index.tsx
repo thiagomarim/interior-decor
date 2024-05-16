@@ -3,6 +3,8 @@ import room2 from "../../../assets/room2.png";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { BsCheckCircle } from "react-icons/bs";
 
+import { motion } from "framer-motion";
+
 const DATA_STEPS = [
   {
     icon: <HiOutlineRocketLaunch size={28} color="#fff" />,
@@ -26,7 +28,13 @@ export default function Steps() {
   return (
     <section className="container">
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-16 sm:gap-32">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: -150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -150 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          viewport={{ once: true }}
+        >
           <h1 className="text-4xl sm:text-5xl font-title mb-16 text-center sm:text-start">
             Designing Your Dream in Three Simple Steps
           </h1>
@@ -53,10 +61,16 @@ export default function Steps() {
               </div>
             </div>
           ))}
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 150 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 150 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          viewport={{ once: true }}
+        >
           <img src={room2} alt="Imagem de uma sala de estar" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
