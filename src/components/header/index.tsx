@@ -1,21 +1,12 @@
+import { useState } from "react";
+import { IoCloseOutline } from "react-icons/io5";
 import { PiHouseLineFill } from "react-icons/pi";
-
-const NAV_LINKS = [
-  {
-    href: "/",
-    name: "Home",
-  },
-  {
-    href: "/",
-    name: "About",
-  },
-  {
-    href: "/",
-    name: "Contact",
-  },
-];
+import { RiMenu3Line } from "react-icons/ri";
+import Nav from "./nav";
 
 export default function Header() {
+  const [menu, setMenu] = useState(false);
+
   return (
     <header className="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
       <div className="container flex items-center justify-between h-full">
@@ -23,18 +14,11 @@ export default function Header() {
           <PiHouseLineFill size={24} color="#fdba74" />
           InteriorDecor
         </a>
-
-        <nav className="flex items-center gap-5">
-          {NAV_LINKS.map((link) => (
-            <ul key={link.name}>
-              <li>
-                <a href={link.href} className="text-lg px-2 py-1">
-                  {link.name}
-                </a>
-              </li>
-            </ul>
-          ))}
-        </nav>
+        <Nav mobile={false} />
+        <button onClick={() => setMenu(!menu)} className="block lg:hidden">
+          {menu ? <IoCloseOutline size={24} /> : <RiMenu3Line size={24} />}
+        </button>
+        {menu && <Nav mobile={true} />}
       </div>
     </header>
   );
