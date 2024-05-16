@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# Interior Decor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔥 Introdução
 
-Currently, two official plugins are available:
+Olá 👋🏻, esse é um projeto pessoal de um website de design de interiores. [Visitar](https://interior-decor-six.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
 
-## Expanding the ESLint configuration
+![image](https://github.com/thiagomarim/interior-decor/assets/137715251/4ecb25e2-3ba6-4f8c-9c50-f94467ec4cf7)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<br>
 
-- Configure the top-level `parserOptions` property like this:
+## 🧪 Tecnologias usadas:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Estilização: [Tailwindcss](https://tailwindcss.com/)
+- Front-end: [React](https://react.dev/) , [Vite](https://vitejs.dev/)
+- Animação: [Framer Motion](https://www.framer.com/motion/)
+- Deployment: [Vercel](https://vercel.com)
+
+## 👷 Autor
+
+* **Thiago Soares Marim** - *Frontend do projeto* - [thiagomarim](https://github.com/link_do_Perfil)
+  
+## 🚀 Vamos começar
+
+Clone esse projeto e acesse os arquivos.
+
+```bash
+git clone https://github.com/thiagomarim/interior-decor.git
+
+cd interior-decor
+
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Execute esse comando para instalar as dependências.
+
+```bash
+npm install
+
+npm start
+```
