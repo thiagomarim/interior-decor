@@ -4,14 +4,35 @@ import brand from "../../../assets/brands/03.svg";
 import nature from "../../../assets/brands/04.svg";
 import classic from "../../../assets/brands/05.svg";
 
+const BRANDS = [
+  {
+    name: "Mordern Home",
+    src: modern,
+  },
+  {
+    name: "Style Vintage",
+    src: style,
+  },
+  {
+    name: "Brand",
+    src: brand,
+  },
+  {
+    name: "Nature Home",
+    src: nature,
+  },
+  {
+    name: "Classic Design Studio",
+    src: classic,
+  },
+];
+
 export default function Brands() {
   return (
     <section className="container grid items-center grid-cols-1 justify-items-center lg:justify-items-start sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 flex-wrap gap-16 lg:gap-32">
-      <img src={modern} alt="Logo da empresa Mordern Home" />
-      <img src={style} alt="Logo da empresa Style Vintage" />
-      <img src={brand} alt="Logo da empresa Brand" />
-      <img src={nature} alt="Logo da empresa Nature Home" />
-      <img src={classic} alt="Logo da empresa Classic Design Studio" />
+      {BRANDS.map((brand, i) => (
+        <img src={brand.src} alt={`Logo da empresa ${brand.name}`} key={i} />
+      ))}
     </section>
   );
 }
