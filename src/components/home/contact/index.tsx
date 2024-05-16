@@ -13,7 +13,7 @@ export default function Contact() {
       transition={{ ease: "easeOut", duration: 2 }}
       viewport={{ once: true }}
     >
-      <h1 className="text-4xl sm:text-5xl font-title">
+      <h1 className="text-4xl sm:text-5xl font-title text-center sm:text-start">
         Do you want to join us
       </h1>
       <p className="text-secondary text-xl text-center max-w-[770px]">
